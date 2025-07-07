@@ -28,11 +28,6 @@ Welcome to the **Modern Scytale Cipher** project! This tool provides an interact
 
 ## 🚀 Getting Started
 
-### 📥 Clone the Repository
-```bash
-git clone https://github.com/<your-username>/scytale-cipher-web.git
-cd scytale-cipher-web
-```
 
 ### 🌐 Run the Application
 Open `index.html` in your browser.
